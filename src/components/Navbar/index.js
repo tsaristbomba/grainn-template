@@ -27,7 +27,7 @@ const Navbar = () => {
     <NavContainer>
       <Sidebar handleMenu={handleMenu} isOpen={isOpen} />
       <NavWrapper>
-        {data.logo !== undefined ? (
+        {data.logo !== null ? (
           <NavLogo src={data.logo} alt="Logo"></NavLogo>
         ) : (
           <NavLogoString to="/">{data.name}</NavLogoString>
