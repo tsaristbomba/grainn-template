@@ -26,45 +26,51 @@ collections:
             widget: list
             fields:
               - { name: navLink, label: Link, widget: "string" }
-          - { name: buttonLabel, label: Button Label, widget: "string" }
       - label: "Footer"
         name: "footer"
         file: "/content/footer.yml"
         fields:
-          - {
-              name: logo,
-              label: Logo,
-              widget: "image",
-              default: "/static/assets/logo.png",
-              allow_multiple: false,
-            }
-          - label: "Footer Links"
-            name: "footerLinks1"
+          - label: "Socials(Facebook, Instagram, Twitter and Youtube only)"
+            name: "socials"
+            widget: "list"
+            fields: 
+              - label: Links
+                  name: links
+                  widget: list
+                  fields:
+                    - { label: "Social Network Name", name: "socialNetwork", widget: "string" }
+                    - { name: "link", label: "Social Link", widget: "string" }
+          - label: "Columns"
+            name: "columns"
             widget: "object"
             fields:
-              - { label: "List Title", name: "list", widget: "string" }
-              - label: Links
-                name: links
-                widget: list
-                fields:
-                  - { name: "link", label: "link", widget: "string" }
-          - label: "Footer Links 2"
-            name: "footerLinks2"
-            widget: "object"
-            fields:
-              - { label:" List Title", name: "list", widget: "string" }
-              - label: Links
-                name: links
-                widget: list
-                fields:
-                  - { name: "link", label: "link", widget: "string" }
-          - label: "Footer Links 3"
-            name: "footerLinks3"
-            widget: "object"
-            fields:
-              - { label: "List Title", name: "list", widget: "string" }
-              - label: Links
-                name: links
-                widget: list
-                fields:
-                  - { name: "link", label: "link", widget: "string" }
+            - label: "Column 1"
+              name: "columnOne"
+              widget: "list"
+              fields:
+                - { label: "List Title", name: "list", widget: "string" }
+                - label: Links
+                  name: links
+                  widget: list
+                  fields:
+                    - { name: "link", label: "link", widget: "string" }
+            - label: "Column 2"
+              name: "columnTwo"
+              widget: "object"
+              fields:
+                - { label:" List Title", name: "list", widget: "string" }
+                - label: Links
+                  name: links
+                  widget: list
+                  fields:
+                    - { name: "link", label: "link", widget: "string" }
+            - label: "Column 3"
+              name: "columnThree"
+              widget: "object"
+              fields:
+                - { label: "List Title", name: "list", widget: "string" }
+                - label: Links
+                  name: links
+                  widget: list
+                  fields:
+                    - { name: "link", label: "link", widget: "string" }
