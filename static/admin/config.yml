@@ -35,8 +35,8 @@ collections:
               widget: "image",
               default: "/static/assets/logo.png",
             }
-          - label: "Footer"
-            name: "footer"
+          - label: "Footer Links"
+            name: "footerLinks"
             file: "/content/footer.yml"
             fields:
               - { label: Title, name: list1, widget: "string" }
