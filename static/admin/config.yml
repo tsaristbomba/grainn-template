@@ -36,24 +36,33 @@ collections:
               default: "/static/assets/logo.png",
             }
           - label: "Footer Links"
-            name: "footerLinks"
+            name: "footerLinks1"
             widget: "object"
             fields:
-              - { label: Links 1 Title, name: list1, widget: "string" }
-              - label: Links1
-                name: footerLinks1
+              - { label: List Title, name: list, widget: "string" }
+              - label: Links
+                name: links
                 widget: list
                 fields:
-                  - { name: link1, label: Link 1, widget: "string" }
-              - { label: Links 2 Title, name: list2, widget: "string" }
-              - label: Links2
-                name: footerLinks2
+                  - { name: link, label: link, widget: "string" }
+          - label: "Footer Links 2"
+              name: "footerLinks2"
+              widget: "object"
+              fields:
+                - { label: List Title, name: list, widget: "string" }
+                - label: Links
+                  name: links
+                  widget: list
+                  fields:
+                    - { name: link, label: link, widget: "string" }
+          - label: "Footer Links 3"
+            name: "footerLinks3"
+            widget: "object"
+            fields:
+              - { label: List Title, name: list, widget: "string" }
+              - label: Links
+                name: links
                 widget: list
                 fields:
-                  - { name: link1, label: Link 1, widget: "string" }
-              - { label: Links 3 Title, name: list3, widget: "string" }
-              - label: Links3
-                name: footerLinks3
-                widget: list
-                fields:
-                  - { name: link1, label: Link 1, widget: "string" }
+                  - { name: link, label: link, widget: "string" }
+        

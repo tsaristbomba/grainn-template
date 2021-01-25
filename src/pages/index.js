@@ -3,11 +3,17 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hello World!</h1>
-  </Layout>
-)
+import footerData from "../../content/footer.yml"
+
+const IndexPage = () => {
+  console.log(footerData)
+
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <h1>hello world!</h1>
+    </Layout>
+  )
+}
 
 export default IndexPage
