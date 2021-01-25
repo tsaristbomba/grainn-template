@@ -37,7 +37,6 @@ collections:
             }
           - label: "Footer Links"
             name: "footerLinks"
-            file: "/content/footer.yml"
             fields:
               - { label: Title, name: list1, widget: "string" }
               - label: Links1
