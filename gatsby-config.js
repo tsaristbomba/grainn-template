@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Grainn Template`,
+    title: `grainn-template`,
     description: `Gatsby Template with Netlify CMS`,
     author: `@gatsbyjs`,
   },
@@ -20,7 +20,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Grainn Template`,
+        name: `grainn-template`,
         short_name: `Grainn`,
         start_url: `/`,
         background_color: `#663399`,

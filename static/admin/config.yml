@@ -1,14 +1,21 @@
 backend:
-  name: grainn
+  name: grainn-template
+
 media_folder: static/assets
 public_folder: /assets
+
 collections:
   - name: navbar
     label: Navbar
     folder: navbar
     create: true
     fields:
-      - { name: logo, label: Logo, widget: "image", default: "/src/images/logo.png" }
+      - {
+          name: logo,
+          label: Logo,
+          widget: "image",
+          default: "/src/images/logo.png",
+        }
       - { name: link1, label: Link 1, widget: "string" }
       - { name: link2, label: Link 2, widget: "string" }
       - { name: link3, label: Link 3, widget: "string" }
