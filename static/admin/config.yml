@@ -33,7 +33,7 @@ collections:
               name: logo,
               label: Logo,
               widget: "image",
-              default: "/src/images/logo.png",
+              default: "/static/assets/logo.png",
             }
           - label: Links1
             name: links1
