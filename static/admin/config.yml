@@ -35,16 +35,12 @@ collections:
             name: "socials"
             widget: "list"
             fields:
-              - label: Links
-                name: links
-                widget: list
-                fields:
-                  - {
-                      label: "Social Network Name",
-                      name: "socialNetwork",
-                      widget: "string",
-                    }
-                  - { name: "link", label: "Social Link", widget: "string" }
+              - {
+                  label: "Social Network Name",
+                  name: "socialNetwork",
+                  widget: "string",
+                }
+              - { name: "link", label: "Social Link", widget: "string" }
           - label: "Columns"
             name: "columns"
             widget: "object"
