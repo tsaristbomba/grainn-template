@@ -1,0 +1,8 @@
+logo: /assets/logo.png
+imageAlt: Logo
+navLinks:
+  - navLink: Features
+  - navLink: Pricing
+  - navLink: About
+  - navLink: Blog
+buttonLabel: Contact Us
