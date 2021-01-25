@@ -22,7 +22,6 @@ const Navbar = () => {
     setIsOpen(!isOpen)
   }
   //
-  console.log(data.logo)
 
   return (
     <NavContainer>
@@ -31,7 +30,7 @@ const Navbar = () => {
         {data.logo !== undefined ? (
           <NavLogo src={data.logo} alt="Logo"></NavLogo>
         ) : (
-          <NavLogoString to="/">Grainn Coffee</NavLogoString>
+          <NavLogoString to="/">{data.name}</NavLogoString>
         )}
         <MobileIcon onClick={handleMenu}>
           <FaBars />
