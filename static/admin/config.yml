@@ -1,24 +1,63 @@
 backend:
-  name: grainn-template
+  name: github
+  repo: tsaristbomba/grainn-template
 
 media_folder: static/assets
 public_folder: /assets
 
 collections:
-  - name: navbar
-    label: Navbar
-    folder: navbar
-    create: true
-    fields:
-      - {
-          name: logo,
-          label: Logo,
-          widget: "image",
-          default: "/src/images/logo.png",
-        }
-      - { name: link1, label: Link 1, widget: "string" }
-      - { name: link2, label: Link 2, widget: "string" }
-      - { name: link3, label: Link 3, widget: "string" }
-      - { name: link4, label: Link 4, widget: "string" }
-      - { name: link5, label: Link 5, widget: "string" }
-      - { name: buttonLabel, label: Button Label, widget: "string" }
+  - name: layout
+    label: Layout
+    files:
+      - label: "Navbar"
+        name: "navbar"
+        file: "/content/navbar.yml"
+        fields:
+          - {
+              name: logo,
+              label: Logo,
+              widget: "image",
+              default: "/src/images/logo.png",
+            }
+          - { name: link1, label: Link 1, widget: "string" }
+          - { name: link2, label: Link 2, widget: "string" }
+          - { name: link3, label: Link 3, widget: "string" }
+          - { name: link4, label: Link 4, widget: "string" }
+          - { name: link5, label: Link 5, widget: "string" }
+          - { name: buttonLabel, label: Button Label, widget: "string" }
+        - label: "Footer"
+        name: "footer"
+        file: "/content/footer.yml"
+        fields:
+          - {
+              name: logo,
+              label: Logo,
+              widget: "image",
+              default: "/src/images/logo.png",}
+          - label: Links1
+            name: links1
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - { name: link1, label: Link 1, widget: "string" }
+              - { name: link2, label: Link 2, widget: "string" }
+              - { name: link3, label: Link 3, widget: "string" }
+              - { name: link4, label: Link 4, widget: "string" }
+          - label: Links2
+            name: links2
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - { name: link1, label: Link 1, widget: "string" }
+              - { name: link2, label: Link 2, widget: "string" }
+              - { name: link3, label: Link 3, widget: "string" }
+              - { name: link4, label: Link 4, widget: "string" }
+          - label: Links3
+            name: links3
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - { name: link1, label: Link 1, widget: "string" }
+              - { name: link2, label: Link 2, widget: "string" }
+              - { name: link3, label: Link 3, widget: "string" }
+              - { name: link4, label: Link 4, widget: "string" }
