@@ -6,8 +6,8 @@ media_folder: static/assets
 public_folder: /assets
 
 collections:
-  - name: layout
-    label: Layout
+  - name: "layout"
+    label: "Layout"
     files:
       - label: "Navbar"
         name: "navbar"
@@ -25,7 +25,7 @@ collections:
           - { name: link4, label: Link 4, widget: "string" }
           - { name: link5, label: Link 5, widget: "string" }
           - { name: buttonLabel, label: Button Label, widget: "string" }
-        - label: "Footer"
+      - label: "Footer"
         name: "footer"
         file: "/content/footer.yml"
         fields:
@@ -33,12 +33,13 @@ collections:
               name: logo,
               label: Logo,
               widget: "image",
-              default: "/src/images/logo.png",}
+              default: "/src/images/logo.png",
+            }
           - label: Links1
             name: links1
             widget: list
             fields:
-              - {label: Title, name: title, widget: string}
+              - { label: Title, name: title, widget: "string" }
               - { name: link1, label: Link 1, widget: "string" }
               - { name: link2, label: Link 2, widget: "string" }
               - { name: link3, label: Link 3, widget: "string" }
@@ -47,7 +48,7 @@ collections:
             name: links2
             widget: list
             fields:
-              - {label: Title, name: title, widget: string}
+              - { label: Title, name: title, widget: "string" }
               - { name: link1, label: Link 1, widget: "string" }
               - { name: link2, label: Link 2, widget: "string" }
               - { name: link3, label: Link 3, widget: "string" }
@@ -56,7 +57,7 @@ collections:
             name: links3
             widget: list
             fields:
-              - {label: Title, name: title, widget: string}
+              - { label: Title, name: title, widget: "string" }
               - { name: link1, label: Link 1, widget: "string" }
               - { name: link2, label: Link 2, widget: "string" }
               - { name: link3, label: Link 3, widget: "string" }
