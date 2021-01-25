@@ -20,6 +20,7 @@ collections:
               default: "/static/assets/logo.png",
               allow_multiple: false,
             }
+          - { name: imageAlt, label: Image Alt, widget: "string" }
           - label: Nav Links
             name: navLinks
             widget: list
