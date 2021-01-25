@@ -12,6 +12,7 @@ collections:
       - label: "Navbar"
         name: "navbar"
         file: "/content/navbar.yml"
+        preview: false
         fields:
           - {
               name: logo,
@@ -30,6 +31,7 @@ collections:
       - label: "Footer"
         name: "footer"
         file: "/content/footer.yml"
+        preview: false
         fields:
           - label: "Columns"
             name: "columns"
@@ -49,7 +51,7 @@ collections:
                 name: "columnTwo"
                 widget: "object"
                 fields:
-                  - { label:" List Title", name: "list", widget: "string" }
+                  - { label: "List Title", name: "list", widget: "string" }
                   - label: List Items
                     name: items
                     widget: list
