@@ -21,6 +21,7 @@ collections:
               allow_multiple: false,
               required: false,
             }
+          - { name: name, label: Site Name, widget: "string" }
           - label: Nav Links
             name: navLinks
             widget: list
