@@ -33,44 +33,48 @@ collections:
           - label: "Socials(Facebook, Instagram, Twitter and Youtube only)"
             name: "socials"
             widget: "list"
-            fields: 
+            fields:
               - label: Links
-                  name: links
-                  widget: list
-                  fields:
-                    - { label: "Social Network Name", name: "socialNetwork", widget: "string" }
-                    - { name: "link", label: "Social Link", widget: "string" }
+                name: links
+                widget: list
+                fields:
+                  - {
+                      label: "Social Network Name",
+                      name: "socialNetwork",
+                      widget: "string",
+                    }
+                  - { name: "link", label: "Social Link", widget: "string" }
           - label: "Columns"
             name: "columns"
             widget: "object"
             fields:
-            - label: "Column 1"
-              name: "columnOne"
-              widget: "list"
-              fields:
-                - { label: "List Title", name: "list", widget: "string" }
-                - label: Links
-                  name: links
-                  widget: list
-                  fields:
-                    - { name: "link", label: "link", widget: "string" }
-            - label: "Column 2"
-              name: "columnTwo"
-              widget: "object"
-              fields:
-                - { label:" List Title", name: "list", widget: "string" }
-                - label: Links
-                  name: links
-                  widget: list
-                  fields:
-                    - { name: "link", label: "link", widget: "string" }
-            - label: "Column 3"
-              name: "columnThree"
-              widget: "object"
-              fields:
-                - { label: "List Title", name: "list", widget: "string" }
-                - label: Links
-                  name: links
-                  widget: list
-                  fields:
-                    - { name: "link", label: "link", widget: "string" }
+              - label: "Column 1"
+                name: "columnOne"
+                widget: "list"
+                fields:
+                  - { label: "List Title", name: "list", widget: "string" }
+                  - label: Links
+                    name: links
+                    widget: list
+                    fields:
+                      - { name: "link", label: "link", widget: "string" }
+              - label: "Column 2"
+                name: "columnTwo"
+                widget: "object"
+                fields:
+                  - { label:" List Title", name: "list", widget: "string" }
+                  - label: Links
+                    name: links
+                    widget: list
+                    fields:
+                      - { name: "link", label: "link", widget: "string" }
+              - label: "Column 3"
+                name: "columnThree"
+                widget: "object"
+                fields:
+                  - { label: "List Title", name: "list", widget: "string" }
+                  - label: Links
+                    name: links
+                    widget: list
+                    fields:
+                      - { name: "link", label: "link", widget: "string" }
