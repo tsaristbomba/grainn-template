@@ -31,23 +31,13 @@ collections:
         name: "footer"
         file: "/content/footer.yml"
         fields:
-          - label: "Socials"
-            name: "socials"
-            widget: "list"
-            fields:
-              - {
-                  label: "Social Network Name",
-                  name: "socialNetwork",
-                  widget: "string",
-                }
-              - { name: "link", label: "Social Link", widget: "string" }
           - label: "Columns"
             name: "columns"
             widget: "object"
             fields:
               - label: "Column 1"
                 name: "columnOne"
-                widget: "list"
+                widget: "object"
                 fields:
                   - { label: "List Title", name: "list", widget: "string" }
                   - label: List Items
@@ -75,3 +65,13 @@ collections:
                     widget: list
                     fields:
                       - { name: "List Item", label: "item", widget: "string" }
+          - label: "Socials"
+            name: "socials"
+            widget: "list"
+            fields:
+              - {
+                  label: "Social Network Name",
+                  name: "socialNetwork",
+                  widget: "string",
+                }
+              - { name: "link", label: "Social Link", widget: "string" }
