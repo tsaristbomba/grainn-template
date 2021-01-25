@@ -42,29 +42,29 @@ collections:
             name: "footerLinks1"
             widget: "object"
             fields:
-              - { label: List Title, name: list, widget: "string" }
+              - { label: "List Title", name: "list", widget: "string" }
               - label: Links
                 name: links
                 widget: list
                 fields:
-                  - { name: link, label: link, widget: "string" }
+                  - { name: "link", label: "link", widget: "string" }
           - label: "Footer Links 2"
             name: "footerLinks2"
             widget: "object"
             fields:
-              - { label: List Title, name: list, widget: "string" }
+              - { label:" List Title", name: "list", widget: "string" }
               - label: Links
                 name: links
                 widget: list
                 fields:
-                  - { name: link, label: link, widget: "string" }
+                  - { name: "link", label: "link", widget: "string" }
           - label: "Footer Links 3"
             name: "footerLinks3"
             widget: "object"
             fields:
-              - { label: List Title, name: list, widget: "string" }
+              - { label: "List Title", name: "list", widget: "string" }
               - label: Links
                 name: links
                 widget: list
                 fields:
-                  - { name: link, label: link, widget: "string" }
+                  - { name: "link", label: "link", widget: "string" }
