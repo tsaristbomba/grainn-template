@@ -18,6 +18,7 @@ collections:
               label: Logo,
               widget: "image",
               default: "/static/assets/logo.png",
+              allow_multiple: false,
             }
           - label: Nav Links
             name: navLinks
@@ -34,6 +35,7 @@ collections:
               label: Logo,
               widget: "image",
               default: "/static/assets/logo.png",
+              allow_multiple: false,
             }
           - label: "Footer Links"
             name: "footerLinks1"
@@ -46,15 +48,15 @@ collections:
                 fields:
                   - { name: link, label: link, widget: "string" }
           - label: "Footer Links 2"
-              name: "footerLinks2"
-              widget: "object"
-              fields:
-                - { label: List Title, name: list, widget: "string" }
-                - label: Links
-                  name: links
-                  widget: list
-                  fields:
-                    - { name: link, label: link, widget: "string" }
+            name: "footerLinks2"
+            widget: "object"
+            fields:
+              - { label: List Title, name: list, widget: "string" }
+              - label: Links
+                name: links
+                widget: list
+                fields:
+                  - { name: link, label: link, widget: "string" }
           - label: "Footer Links 3"
             name: "footerLinks3"
             widget: "object"
@@ -65,4 +67,3 @@ collections:
                 widget: list
                 fields:
                   - { name: link, label: link, widget: "string" }
-        
