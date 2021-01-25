@@ -1,0 +1,16 @@
+logo: /assets/logo.png
+footerLinks1:
+  list: Company
+  links:
+    - link: About
+footerLinks2:
+  list: Blog
+  links:
+    - link: News
+    - link: General
+    - link: Tutorials
+footerLinks3:
+  list: Legal
+  links:
+    - link: Terms & Conditions
+    - link: Privacy Policy
