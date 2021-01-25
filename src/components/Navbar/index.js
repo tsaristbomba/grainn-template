@@ -29,7 +29,7 @@ const Navbar = () => {
       <Sidebar handleMenu={handleMenu} isOpen={isOpen} />
       <NavWrapper>
         {data.logo !== undefined ? (
-          <NavLogo src={data.logo} alt={data.imageAlt}></NavLogo>
+          <NavLogo src={data.logo} alt="Logo"></NavLogo>
         ) : (
           <NavLogoString to="/">Grainn Coffee</NavLogoString>
         )}
