@@ -19,6 +19,7 @@ collections:
               widget: "image",
               default: "/static/assets/logo.png",
               allow_multiple: false,
+              required: false,
             }
           - { name: imageAlt, label: Image Alt, widget: "string" }
           - label: Nav Links
@@ -30,7 +31,7 @@ collections:
         name: "footer"
         file: "/content/footer.yml"
         fields:
-          - label: "Socials(Facebook, Instagram, Twitter and Youtube only)"
+          - label: "Socials"
             name: "socials"
             widget: "list"
             fields:
