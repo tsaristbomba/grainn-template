@@ -30,11 +30,11 @@ collections:
             fields:
               - { name: navLink, label: Link, widget: "string", preview: false }
               - {
-              name: slug,
-              label: Link Slug,
-              widget: "string",
-              preview: false,
-              }
+                  name: slug,
+                  label: Link Slug,
+                  widget: "string",
+                  preview: false,
+                }
       - label: "Footer"
         name: "footer"
         file: "/content/footer.yml"
@@ -337,4 +337,3 @@ collections:
                       allow_multiple: false,
                       preview: false,
                     }
-                
