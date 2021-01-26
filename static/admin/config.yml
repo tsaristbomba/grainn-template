@@ -313,7 +313,7 @@ collections:
       - { name: "text", label: "Detailed Paragraph", widget: "string", preview: false }
       - label: "Menu"
         name: "menu"
-        widget: "list"
+        widget: "object"
         min: 1,
         fields:
           - {
