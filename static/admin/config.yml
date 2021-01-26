@@ -8,7 +8,6 @@ public_folder: /assets
 collections:
   - name: "layout"
     label: "Layout"
-    widget: "object"
     files:
       - label: "Navbar"
         name: "navbar"
@@ -127,7 +126,6 @@ collections:
                 }
   - name: "home"
     label: "Home Page"
-    widget: "object"
     files:
       - label: "Hero"
         name: "hero"
@@ -225,7 +223,6 @@ collections:
   - label: "Banner"
     name: "banner"
     file: "/content/banner.yml"
-    widget: "object"
     fields:
       - {
           name: "bannerImg",
@@ -264,7 +261,6 @@ collections:
   - label: "About Us"
     name: "about"
     file: "/content/about.yml"
-    widget: "object"
     fields:
       - {
           name: "backgroundImage",
@@ -311,7 +307,6 @@ collections:
   - label: "Menu"
     name: "menu"
     file: "/content/menu.yml"
-    widget: "object"
     fields:
       - {
           name: "backgroundImage",
