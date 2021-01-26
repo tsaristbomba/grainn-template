@@ -312,28 +312,28 @@ collections:
       - { name: "shortDescription", label: "Short Description", widget: "string", preview: false }
       - { name: "text", label: "Detailed Paragraph", widget: "string", preview: false }
       - label: "Menu"
-            name: "menu"
-            widget: "list"
-            min: 1,
+        name: "menu"
+        widget: "list"
+        min: 1,
+        fields:
+          - {
+              name: "name",
+              label: "Menu Name",
+              widget: "string",
+              preview: false,
+            }
+          - name: "items",
+            label: "Menu Items",
+            widget: "list",
+            preview: false,
             fields:
+              - { name: "title", label: "Title", widget: "string", preview: false }
+              - { name: "description", label: "Description", widget: "string", preview: false }
               - {
-                  name: "name",
-                  label: "Menu Name",
-                  widget: "string",
+                  name: "image",
+                  label: "Item Image",
+                  widget: "image",
+                  default: "/static/assets/menu-bg.jpg",
+                  allow_multiple: false,
                   preview: false,
                 }
-              - name: "items",
-                label: "Menu Items",
-                widget: "list",
-                preview: false,
-                fields:
-                  - { name: "title", label: "Title", widget: "string", preview: false }
-                  - { name: "description", label: "Description", widget: "string", preview: false }
-                  - {
-                      name: "image",
-                      label: "Item Image",
-                      widget: "image",
-                      default: "/static/assets/menu-bg.jpg",
-                      allow_multiple: false,
-                      preview: false,
-                    }
