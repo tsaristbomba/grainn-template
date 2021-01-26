@@ -260,12 +260,7 @@ collections:
           widget: "string",
           preview: false,
         }
-      - {
-          name: "slug",
-          label: "Button Slug",
-          widget: "string",
-          preview: false,
-        }
+      - { name: "slug", label: "Button Slug", widget: "string", preview: false }
   - label: "About Us"
     name: "about"
     file: "/content/about.yml"
@@ -280,21 +275,31 @@ collections:
           preview: false,
         }
       - { name: "title", label: "Title", widget: "string", preview: false }
-      - { name: "subtitle", label: "Subtitle", widget: "string", preview: false }
-      - { name: "shortDescription", label: "Short Description", widget: "string", preview: false }
-      - { name: "text", label: "Detailed Paragraph", widget: "string", preview: false }
+      - {
+          name: "subtitle",
+          label: "Subtitle",
+          widget: "string",
+          preview: false,
+        }
+      - {
+          name: "shortDescription",
+          label: "Short Description",
+          widget: "string",
+          preview: false,
+        }
+      - {
+          name: "text",
+          label: "Detailed Paragraph",
+          widget: "string",
+          preview: false,
+        }
       - {
           name: "button",
           label: "Button Label",
           widget: "string",
           preview: false,
         }
-      - {
-          name: "slug",
-          label: "Button Slug",
-          widget: "string",
-          preview: false,
-        }
+      - { name: "slug", label: "Button Slug", widget: "string", preview: false }
       - {
           name: "image",
           label: "Image",
@@ -317,9 +322,24 @@ collections:
           preview: false,
         }
       - { name: "title", label: "Title", widget: "string", preview: false }
-      - { name: "subtitle", label: "Subtitle", widget: "string", preview: false }
-      - { name: "shortDescription", label: "Short Description", widget: "string", preview: false }
-      - { name: "text", label: "Detailed Paragraph", widget: "string", preview: false }
+      - {
+          name: "subtitle",
+          label: "Subtitle",
+          widget: "string",
+          preview: false,
+        }
+      - {
+          name: "shortDescription",
+          label: "Short Description",
+          widget: "string",
+          preview: false,
+        }
+      - {
+          name: "text",
+          label: "Detailed Paragraph",
+          widget: "string",
+          preview: false,
+        }
       - label: "Menu"
         name: "menu"
         widget: "object"
@@ -330,13 +350,23 @@ collections:
               widget: "string",
               preview: false,
             }
-          - name: "items",
-            label: "Menu Items",
-            widget: "list",
-            preview: false,
+          - name: "items"
+            label: "Menu Items"
+            widget: "list"
+            preview: false
             fields:
-              - { name: "title", label: "Title", widget: "string", preview: false }
-              - { name: "description", label: "Description", widget: "string", preview: false }
+              - {
+                  name: "title",
+                  label: "Title",
+                  widget: "string",
+                  preview: false,
+                }
+              - {
+                  name: "description",
+                  label: "Description",
+                  widget: "string",
+                  preview: false,
+                }
               - {
                   name: "image",
                   label: "Item Image",
