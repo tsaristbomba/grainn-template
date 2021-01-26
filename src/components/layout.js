@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
         url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Open+Sans&display=swap');
       </style>
       <GlobalStyles />
-      <Navbar />
+      {/* <Navbar /> */}
       <main>{children}</main>
       <Footer />
     </>
