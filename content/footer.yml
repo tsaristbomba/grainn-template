@@ -1,6 +1,6 @@
 columns:
   columnOne:
-    list: Adress
+    list: Address
     items:
       - List Item: Grainn Café
       - List Item: 725 5th Ave, New York, NY 10022, United States
