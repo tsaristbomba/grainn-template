@@ -46,6 +46,7 @@ collections:
                     name: items
                     widget: list
                     min: 1
+                    max: 3
               - label: "Column 2"
                 name: "columnTwo"
                 widget: "object"
@@ -55,6 +56,7 @@ collections:
                     name: items
                     widget: list
                     min: 1
+                    max: 3
               - label: "Column 3"
                 name: "columnThree"
                 widget: "object"
@@ -64,6 +66,7 @@ collections:
                     name: items
                     widget: list
                     min: 1
+                    max: 3
           - label: "Socials"
             name: "socials"
             widget: "list"
