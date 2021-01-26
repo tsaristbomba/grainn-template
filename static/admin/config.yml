@@ -26,6 +26,7 @@ collections:
           - label: Nav Links
             name: navLinks
             widget: list
+            min: 3
             fields:
               - { name: navLink, label: Link, widget: "string" }
       - label: "Footer"
@@ -78,5 +79,6 @@ collections:
                   label: "Social Network Name",
                   name: "socialNetwork",
                   widget: "string",
+                  min: 1,
                 }
               - { name: "link", label: "Social Link", widget: "string" }
