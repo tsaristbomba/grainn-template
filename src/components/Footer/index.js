@@ -12,14 +12,12 @@ import {
   FooterContainer,
   FooterWrapper,
   FooterContent,
-  ColumnOne,
+  Column,
   FooterSocials,
   SocialLink,
 } from "./Footer.styles"
 
 const Footer = () => {
-  console.log(data)
-
   function getSocialIcon(social) {
     const lower = social.toLowerCase()
 
@@ -41,21 +39,40 @@ const Footer = () => {
     <FooterContainer>
       <FooterWrapper>
         <FooterContent>
-          <ColumnOne>
-            {/* <h2>{data.columnOne.list}</h2>
+          <Column>
+            <h2>{data.columns.columnOne.list}</h2>
             <ul>
-              {data.columnOne.items.map((item, key) => (
-                <li key={key}>{item}</li>
+              {data.columns.columnOne.items.map((item, key) => (
+                <li key={key}>{item.item}</li>
               ))}
-            </ul> */}
-          </ColumnOne>
+            </ul>
+          </Column>
+          <Column>
+            <h2>{data.columns.columnTwo.list}</h2>
+            <ul>
+              {data.columns.columnTwo.items.map((item, key) => (
+                <li key={key}>{item.item}</li>
+              ))}
+            </ul>
+          </Column>
+          <Column>
+            <h2>{data.columns.columnThree.list}</h2>
+            <ul>
+              {data.columns.columnThree.items.map((item, key) => (
+                <li key={key}>{item.item}</li>
+              ))}
+            </ul>
+          </Column>
         </FooterContent>
         <FooterSocials>
-          {data.socials.map((item, key) => (
-            <SocialLink key={key} href={item.link} target="__blank">
-              {getSocialIcon(item.socialNetwork)}
-            </SocialLink>
-          ))}
+          <h2>Socials</h2>
+          <div>
+            {data.socials.map((item, key) => (
+              <SocialLink key={key} href={item.link} target="__blank">
+                {getSocialIcon(item.socialNetwork)}
+              </SocialLink>
+            ))}
+          </div>
         </FooterSocials>
       </FooterWrapper>
     </FooterContainer>

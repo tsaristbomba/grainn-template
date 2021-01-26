@@ -82,3 +82,20 @@ collections:
                   min: 1,
                 }
               - { name: "link", label: "Social Link", widget: "string" }
+  - name: "home"
+    label: "Home Page"
+    files:
+      - label: "Hero"
+        name: "hero"
+        file: "/content/hero.yml"
+        preview: false
+        fields:
+          - {
+              name: heroImg,
+              label: Background Image,
+              widget: "image",
+              default: "/static/assets/hero.jpg",
+              allow_multiple: false,
+            }
+          - { name: heroTitle, label: Hero Title, widget: "string" }
+          - { name: heroSub, label: Hero Subtitle, widget: "string" }

@@ -23,15 +23,22 @@ const Navbar = () => {
   }
   //
 
+  function handleLogo(logo) {
+    switch (logo) {
+      case undefined:
+        return <NavLogoString to="/">{data.name}</NavLogoString>
+      case null:
+        return <NavLogoString to="/">{data.name}</NavLogoString>
+      default:
+        return <NavLogo src={data.logo} alt="Logo" />
+    }
+  }
+
   return (
     <NavContainer>
       <Sidebar handleMenu={handleMenu} isOpen={isOpen} />
       <NavWrapper>
-        {data.logo !== null ? (
-          <NavLogo src={data.logo} alt="Logo"></NavLogo>
-        ) : (
-          <NavLogoString to="/">{data.name}</NavLogoString>
-        )}
+        {handleLogo(data.logo)}
         <MobileIcon onClick={handleMenu}>
           <FaBars />
         </MobileIcon>
