@@ -48,7 +48,7 @@ collections:
                     widget: list
                     min: 1
                     fields:
-                      - { name: "List Item", label: "item", widget: "string" }
+                      - { name: "item", label: "List Item", widget: "string" }
               - label: "Column 2"
                 name: "columnTwo"
                 widget: "object"
@@ -59,7 +59,7 @@ collections:
                     widget: list
                     min: 1
                     fields:
-                      - { name: "List Item", label: "item", widget: "string" }
+                      - { name: "item", label: "List Item", widget: "string" }
               - label: "Column 3"
                 name: "columnThree"
                 widget: "object"
@@ -70,7 +70,7 @@ collections:
                     widget: list
                     min: 1
                     fields:
-                      - { name: "List Item", label: "item", widget: "string" }
+                      - { name: "item", label: "List Item", widget: "string" }
           - label: "Socials"
             name: "socials"
             widget: "list"
