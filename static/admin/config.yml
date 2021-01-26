@@ -12,7 +12,6 @@ collections:
       - label: "Navbar"
         name: "navbar"
         file: "/content/navbar.yml"
-        widget: "object"
         fields:
           - {
               name: logo,
@@ -39,7 +38,6 @@ collections:
       - label: "Footer"
         name: "footer"
         file: "/content/footer.yml"
-        widget: "object"
         fields:
           - label: "Columns"
             name: "columns"
@@ -130,7 +128,6 @@ collections:
       - label: "Hero"
         name: "hero"
         file: "/content/hero.yml"
-        widget: "object"
         fields:
           - {
               name: heroImg,
@@ -155,7 +152,6 @@ collections:
       - label: "Info"
         name: "info"
         file: "/content/info.yml"
-        widget: "object"
         fields:
           - {
               name: "infoImageOne",
