@@ -1,0 +1,8 @@
+bannerImg: /assets/reservation.jpg
+description: Reserve a Table
+title: Open Hours
+textList:
+  - text: "Monday – Friday: 7 AM – 11 PM"
+  - text: "Saturday – Sunday: 7 AM – 1 PM"
+button: Book Now
+slug: book
