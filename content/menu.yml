@@ -1,0 +1,29 @@
+backgroundImage: /assets/menu-bg.jpg
+title: Our Menu
+subtitle: Check out our premium coffee recipes
+shortDescription: Discover
+text: Explore texture, color and of course the ultimate tastes with our menu of
+  the season. All the ingredients are fresh and carefully selected by our chefs.
+  Enjoy an extraordinary coffee experience.
+menu:
+  - name: Hot Coffees
+    items:
+      - image: /static/assets/menu-bg.jpg
+        description: Espresso shots topped with hot water create a light layer of crema
+          culminating in this wonderfully rich cup with depth and nuance.
+        title: Caffè Americano
+      - image: /static/assets/menu-bg.jpg
+        title: Cappuccino
+        description: Dark, rich espresso lies in wait under a smoothed and stretched
+          layer of thick milk foam. An alchemy of barista artistry and craft.
+  - name: Cold Coffees
+    items:
+      - image: /static/assets/menu-bg.jpg
+        title: Vanilla Sweet Cream Cold Brew
+        description: Cold Brew coffee accented with vanilla and topped with a delicate
+          float of house-made vanilla sweet cream that cascades throughout the
+          cup.
+      - image: /static/assets/menu-bg.jpg
+        title: Cold Brew Coffee with Milk
+        description: Handcrafted in small batches daily, slow-steeped in cool water for
+          20 hours, without touching heat and finished with a splash of milk
