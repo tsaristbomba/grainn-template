@@ -123,8 +123,8 @@ collections:
                   preview: false,
                 }
 
-  - name: "home"
-    label: "Home Page"
+  - name: "pages"
+    label: "Pages"
     files:
       - label: "Hero"
         name: "hero"
@@ -217,155 +217,168 @@ collections:
               widget: "string",
               preview: false,
             }
-
-  - label: "Banner"
-    name: "banner"
-    file: "/content/banner.yml"
-    fields:
-      - {
-          name: "bannerImg",
-          label: "Background Image",
-          widget: "image",
-          default: "/static/assets/reservation.jpg",
-          allow_multiple: false,
-          preview: false,
-        }
-      - {
-          name: "description",
-          label: "Short Description",
-          widget: "string",
-          preview: false,
-        }
-      - {
-          name: "title",
-          label: "Banner Title",
-          widget: "string",
-          preview: false,
-        }
-      - label: "Text list"
-        name: "textList"
-        widget: "list"
-        min: 1
-        max: 2
-        fields:
-          - { name: "text", label: "Text", widget: "string", preview: false }
-      - {
-          name: "button",
-          label: "Button Label",
-          widget: "string",
-          preview: false,
-        }
-      - { name: "slug", label: "Button Slug", widget: "string", preview: false }
-  - label: "About Us"
-    name: "about"
-    file: "/content/about.yml"
-    fields:
-      - {
-          name: "backgroundImage",
-          label: "Background Image",
-          widget: "image",
-          default: "/static/assets/about-bg.jpg",
-          allow_multiple: false,
-          preview: false,
-        }
-      - { name: "title", label: "Title", widget: "string", preview: false }
-      - {
-          name: "subtitle",
-          label: "Subtitle",
-          widget: "string",
-          preview: false,
-        }
-      - {
-          name: "shortDescription",
-          label: "Short Description",
-          widget: "string",
-          preview: false,
-        }
-      - {
-          name: "text",
-          label: "Detailed Paragraph",
-          widget: "string",
-          preview: false,
-        }
-      - {
-          name: "button",
-          label: "Button Label",
-          widget: "string",
-          preview: false,
-        }
-      - { name: "slug", label: "Button Slug", widget: "string", preview: false }
-      - {
-          name: "image",
-          label: "Image",
-          widget: "image",
-          default: "/static/assets/about.jpg",
-          allow_multiple: false,
-          preview: false,
-        }
-
-  - label: "Menu"
-    name: "menu"
-    file: "/content/menu.yml"
-    fields:
-      - {
-          name: "backgroundImage",
-          label: "Background Image",
-          widget: "image",
-          default: "/static/assets/menu-bg.jpg",
-          allow_multiple: false,
-          preview: false,
-        }
-      - { name: "title", label: "Title", widget: "string", preview: false }
-      - {
-          name: "subtitle",
-          label: "Subtitle",
-          widget: "string",
-          preview: false,
-        }
-      - {
-          name: "shortDescription",
-          label: "Short Description",
-          widget: "string",
-          preview: false,
-        }
-      - {
-          name: "text",
-          label: "Detailed Paragraph",
-          widget: "string",
-          preview: false,
-        }
-      - label: "Menu"
-        name: "menu"
-        widget: "object"
+      - label: "Banner"
+        name: "banner"
+        file: "/content/banner.yml"
         fields:
           - {
-              name: "name",
-              label: "Menu Name",
+              name: "bannerImg",
+              label: "Background Image",
+              widget: "image",
+              default: "/static/assets/reservation.jpg",
+              allow_multiple: false,
+              preview: false,
+            }
+          - {
+              name: "description",
+              label: "Short Description",
               widget: "string",
               preview: false,
             }
-          - name: "items"
-            label: "Menu Items"
+          - {
+              name: "title",
+              label: "Banner Title",
+              widget: "string",
+              preview: false,
+            }
+          - label: "Text list"
+            name: "textList"
             widget: "list"
-            preview: false
+            min: 1
+            max: 2
             fields:
               - {
-                  name: "title",
-                  label: "Title",
+                  name: "text",
+                  label: "Text",
                   widget: "string",
                   preview: false,
                 }
+          - {
+              name: "button",
+              label: "Button Label",
+              widget: "string",
+              preview: false,
+            }
+          - {
+              name: "slug",
+              label: "Button Slug",
+              widget: "string",
+              preview: false,
+            }
+      - label: "About Us"
+        name: "about"
+        file: "/content/about.yml"
+        fields:
+          - {
+              name: "backgroundImage",
+              label: "Background Image",
+              widget: "image",
+              default: "/static/assets/about-bg.jpg",
+              allow_multiple: false,
+              preview: false,
+            }
+          - { name: "title", label: "Title", widget: "string", preview: false }
+          - {
+              name: "subtitle",
+              label: "Subtitle",
+              widget: "string",
+              preview: false,
+            }
+          - {
+              name: "shortDescription",
+              label: "Short Description",
+              widget: "string",
+              preview: false,
+            }
+          - {
+              name: "text",
+              label: "Detailed Paragraph",
+              widget: "string",
+              preview: false,
+            }
+          - {
+              name: "button",
+              label: "Button Label",
+              widget: "string",
+              preview: false,
+            }
+          - {
+              name: "slug",
+              label: "Button Slug",
+              widget: "string",
+              preview: false,
+            }
+          - {
+              name: "image",
+              label: "Image",
+              widget: "image",
+              default: "/static/assets/about.jpg",
+              allow_multiple: false,
+              preview: false,
+            }
+      - label: "Menu"
+        name: "menu"
+        file: "/content/menu.yml"
+        fields:
+          - {
+              name: "backgroundImage",
+              label: "Background Image",
+              widget: "image",
+              default: "/static/assets/menu-bg.jpg",
+              allow_multiple: false,
+              preview: false,
+            }
+          - { name: "title", label: "Title", widget: "string", preview: false }
+          - {
+              name: "subtitle",
+              label: "Subtitle",
+              widget: "string",
+              preview: false,
+            }
+          - {
+              name: "shortDescription",
+              label: "Short Description",
+              widget: "string",
+              preview: false,
+            }
+          - {
+              name: "text",
+              label: "Detailed Paragraph",
+              widget: "string",
+              preview: false,
+            }
+          - label: "Menu"
+            name: "menu"
+            widget: "object"
+            fields:
               - {
-                  name: "description",
-                  label: "Description",
+                  name: "name",
+                  label: "Menu Name",
                   widget: "string",
                   preview: false,
                 }
-              - {
-                  name: "image",
-                  label: "Item Image",
-                  widget: "image",
-                  default: "/static/assets/menu-bg.jpg",
-                  allow_multiple: false,
-                  preview: false,
-                }
+              - name: "items"
+                label: "Menu Items"
+                widget: "list"
+                preview: false
+                fields:
+                  - {
+                      name: "title",
+                      label: "Title",
+                      widget: "string",
+                      preview: false,
+                    }
+                  - {
+                      name: "description",
+                      label: "Description",
+                      widget: "string",
+                      preview: false,
+                    }
+                  - {
+                      name: "image",
+                      label: "Item Image",
+                      widget: "image",
+                      default: "/static/assets/menu-bg.jpg",
+                      allow_multiple: false,
+                      preview: false,
+                    }
