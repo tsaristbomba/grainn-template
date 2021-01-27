@@ -1,0 +1,7 @@
+name: Grainn Café
+navLinks:
+  - navLink: Home
+  - navLink: About
+    slug: about
+  - navLink: Menu
+    slug: menu
