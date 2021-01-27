@@ -30,7 +30,12 @@ collections:
             min: 3
             fields:
               - { name: navLink, label: Link, widget: "string" }
-              - { name: slug, label: Link Slug, widget: "string" }
+              - {
+                  name: slug,
+                  label: Link Slug,
+                  widget: "string",
+                  required: false,
+                }
       - label: "Footer"
         name: "footer"
         file: "/content/footer.yml"
