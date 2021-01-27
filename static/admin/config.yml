@@ -8,6 +8,8 @@ public_folder: /assets
 collections:
   - name: "layout"
     label: "Layout"
+    editor:
+      preview: false
     files:
       - label: "Navbar"
         name: "navbar"
@@ -20,21 +22,15 @@ collections:
               default: "/static/assets/logo.png",
               allow_multiple: false,
               required: false,
-              preview: false,
             }
-          - { name: name, label: Site Name, widget: "string", preview: false }
+          - { name: name, label: Site Name, widget: "string" }
           - label: Nav Links
             name: navLinks
             widget: list
             min: 3
             fields:
-              - { name: navLink, label: Link, widget: "string", preview: false }
-              - {
-                  name: slug,
-                  label: Link Slug,
-                  widget: "string",
-                  preview: false,
-                }
+              - { name: navLink, label: Link, widget: "string" }
+              - { name: slug, label: Link Slug, widget: "string" }
       - label: "Footer"
         name: "footer"
         file: "/content/footer.yml"
@@ -47,65 +43,35 @@ collections:
                 name: "columnOne"
                 widget: "object"
                 fields:
-                  - {
-                      label: "List Title",
-                      name: "list",
-                      widget: "string",
-                      preview: false,
-                    }
+                  - { label: "List Title", name: "list", widget: "string" }
                   - label: List Items
                     name: items
                     widget: list
                     min: 1
                     fields:
-                      - {
-                          name: "item",
-                          label: "List Item",
-                          widget: "string",
-                          preview: false,
-                        }
+                      - { name: "item", label: "List Item", widget: "string" }
               - label: "Column 2"
                 name: "columnTwo"
                 widget: "object"
                 fields:
-                  - {
-                      label: "List Title",
-                      name: "list",
-                      widget: "string",
-                      preview: false,
-                    }
+                  - { label: "List Title", name: "list", widget: "string" }
                   - label: List Items
                     name: items
                     widget: list
                     min: 1
                     fields:
-                      - {
-                          name: "item",
-                          label: "List Item",
-                          widget: "string",
-                          preview: false,
-                        }
+                      - { name: "item", label: "List Item", widget: "string" }
               - label: "Column 3"
                 name: "columnThree"
                 widget: "object"
                 fields:
-                  - {
-                      label: "List Title",
-                      name: "list",
-                      widget: "string",
-                      preview: false,
-                    }
+                  - { label: "List Title", name: "list", widget: "string" }
                   - label: List Items
                     name: items
                     widget: list
                     min: 1
                     fields:
-                      - {
-                          name: "item",
-                          label: "List Item",
-                          widget: "string",
-                          preview: false,
-                        }
+                      - { name: "item", label: "List Item", widget: "string" }
           - label: "Socials"
             name: "socials"
             widget: "list"
@@ -116,15 +82,12 @@ collections:
                   widget: "string",
                   min: 1,
                 }
-              - {
-                  name: "link",
-                  label: "Social Link",
-                  widget: "string",
-                  preview: false,
-                }
+              - { name: "link", label: "Social Link", widget: "string" }
 
   - name: "pages"
     label: "Pages"
+    editor:
+      preview: false
     files:
       - label: "Hero"
         name: "hero"
@@ -136,20 +99,9 @@ collections:
               widget: "image",
               default: "/static/assets/hero.jpg",
               allow_multiple: false,
-              preview: false,
             }
-          - {
-              name: heroTitle,
-              label: Hero Title,
-              widget: "string",
-              preview: false,
-            }
-          - {
-              name: heroSub,
-              label: Hero Subtitle,
-              widget: "string",
-              preview: false,
-            }
+          - { name: heroTitle, label: Hero Title, widget: "string" }
+          - { name: heroSub, label: Hero Subtitle, widget: "string" }
       - label: "Info"
         name: "info"
         file: "/content/info.yml"
@@ -161,20 +113,9 @@ collections:
               default: "/static/assets/coffee-cup.svg",
               allow_multiple: false,
               required: false,
-              preview: false,
             }
-          - {
-              name: "infoTitleOne",
-              label: "Info Title",
-              widget: "string",
-              preview: false,
-            }
-          - {
-              name: "infoSubOne",
-              label: "Info Subtitle",
-              widget: "string",
-              preview: false,
-            }
+          - { name: "infoTitleOne", label: "Info Title", widget: "string" }
+          - { name: "infoSubOne", label: "Info Subtitle", widget: "string" }
           - {
               name: "infoImageTwo",
               label: "Image 2",
@@ -182,20 +123,9 @@ collections:
               default: "/static/assets/coffee-cup.svg",
               allow_multiple: false,
               required: false,
-              preview: false,
             }
-          - {
-              name: "infoTitleTwo",
-              label: "Info Title",
-              widget: "string",
-              preview: false,
-            }
-          - {
-              name: "infoSubTwo",
-              label: "Info Subtitle",
-              widget: "string",
-              preview: false,
-            }
+          - { name: "infoTitleTwo", label: "Info Title", widget: "string" }
+          - { name: "infoSubTwo", label: "Info Subtitle", widget: "string" }
           - {
               name: "infoImageThree",
               label: "Image 3",
@@ -203,20 +133,9 @@ collections:
               default: "/static/assets/coffee-beans.svg",
               allow_multiple: false,
               required: false,
-              preview: false,
             }
-          - {
-              name: "infoTitleThree",
-              label: "Info Title",
-              widget: "string",
-              preview: false,
-            }
-          - {
-              name: "infoSubThree",
-              label: Info Subtitle,
-              widget: "string",
-              preview: false,
-            }
+          - { name: "infoTitleThree", label: "Info Title", widget: "string" }
+          - { name: "infoSubThree", label: Info Subtitle, widget: "string" }
       - label: "Banner"
         name: "banner"
         file: "/content/banner.yml"
@@ -227,44 +146,22 @@ collections:
               widget: "image",
               default: "/static/assets/reservation.jpg",
               allow_multiple: false,
-              preview: false,
             }
           - {
               name: "description",
               label: "Short Description",
               widget: "string",
-              preview: false,
             }
-          - {
-              name: "title",
-              label: "Banner Title",
-              widget: "string",
-              preview: false,
-            }
+          - { name: "title", label: "Banner Title", widget: "string" }
           - label: "Text list"
             name: "textList"
             widget: "list"
             min: 1
             max: 2
             fields:
-              - {
-                  name: "text",
-                  label: "Text",
-                  widget: "string",
-                  preview: false,
-                }
-          - {
-              name: "button",
-              label: "Button Label",
-              widget: "string",
-              preview: false,
-            }
-          - {
-              name: "slug",
-              label: "Button Slug",
-              widget: "string",
-              preview: false,
-            }
+              - { name: "text", label: "Text", widget: "string" }
+          - { name: "button", label: "Button Label", widget: "string" }
+          - { name: "slug", label: "Button Slug", widget: "string" }
       - label: "About Us"
         name: "about"
         file: "/content/about.yml"
@@ -275,46 +172,23 @@ collections:
               widget: "image",
               default: "/static/assets/about-bg.jpg",
               allow_multiple: false,
-              preview: false,
             }
-          - { name: "title", label: "Title", widget: "string", preview: false }
-          - {
-              name: "subtitle",
-              label: "Subtitle",
-              widget: "string",
-              preview: false,
-            }
+          - { name: "title", label: "Title", widget: "string" }
+          - { name: "subtitle", label: "Subtitle", widget: "string" }
           - {
               name: "shortDescription",
               label: "Short Description",
               widget: "string",
-              preview: false,
             }
-          - {
-              name: "text",
-              label: "Detailed Paragraph",
-              widget: "string",
-              preview: false,
-            }
-          - {
-              name: "button",
-              label: "Button Label",
-              widget: "string",
-              preview: false,
-            }
-          - {
-              name: "slug",
-              label: "Button Slug",
-              widget: "string",
-              preview: false,
-            }
+          - { name: "text", label: "Detailed Paragraph", widget: "string" }
+          - { name: "button", label: "Button Label", widget: "string" }
+          - { name: "slug", label: "Button Slug", widget: "string" }
           - {
               name: "image",
               label: "Image",
               widget: "image",
               default: "/static/assets/about.jpg",
               allow_multiple: false,
-              preview: false,
             }
       - label: "Menu"
         name: "menu"
@@ -326,53 +200,29 @@ collections:
               widget: "image",
               default: "/static/assets/menu-bg.jpg",
               allow_multiple: false,
-              preview: false,
             }
-          - { name: "title", label: "Title", widget: "string", preview: false }
-          - {
-              name: "subtitle",
-              label: "Subtitle",
-              widget: "string",
-              preview: false,
-            }
+          - { name: "title", label: "Title", widget: "string" }
+          - { name: "subtitle", label: "Subtitle", widget: "string" }
           - {
               name: "shortDescription",
               label: "Short Description",
               widget: "string",
-              preview: false,
             }
-          - {
-              name: "text",
-              label: "Detailed Paragraph",
-              widget: "string",
-              preview: false,
-            }
+          - { name: "text", label: "Detailed Paragraph", widget: "string" }
           - label: "Menu"
             name: "menu"
             widget: "object"
             fields:
-              - {
-                  name: "name",
-                  label: "Menu Name",
-                  widget: "string",
-                  preview: false,
-                }
+              - { name: "name", label: "Menu Name", widget: "string" }
               - name: "items"
                 label: "Menu Items"
                 widget: "list"
-                preview: false
                 fields:
-                  - {
-                      name: "title",
-                      label: "Title",
-                      widget: "string",
-                      preview: false,
-                    }
+                  - { name: "title", label: "Title", widget: "string" }
                   - {
                       name: "description",
                       label: "Description",
                       widget: "string",
-                      preview: false,
                     }
                   - {
                       name: "image",
@@ -380,5 +230,4 @@ collections:
                       widget: "image",
                       default: "/static/assets/menu-bg.jpg",
                       allow_multiple: false,
-                      preview: false,
                     }
